@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lundefuld.dk - plakater</title>
   </head>
+
   <body>
     <!-- Navigation -->
+
     <div class="">
       <div>
         <div class="relative">
@@ -395,28 +397,61 @@
         <!-- Hero -->
         <div class="flex flex-col justify-center">
           <div class="relative">
+            <div
+              class="absolute bottom-4 top-4 left-4 flex items-center justify-self-center pr-10 sm:bottom-8 sm:top-40 sm:left-10 sm:pr-0"
+            >
+              <button
+                class="rounded border-2 border-solid border-slate-800 px-5"
+              >
+                Køb din plakat nu
+              </button>
+            </div>
             <img
               class="hidden w-full sm:block"
-              src="content/lunefuld-header.jpg"
+              src="content/lunefuld-header2.jpg"
               alt="plakat i stue"
             />
             <img
               class="w-full sm:hidden"
-              src="content/lunefuld-header.jpg"
+              src="content/lunefuld-header2.jpg"
               alt="plakat i stue"
             />
             <div
               class="absolute bottom-4 top-4 left-4 flex items-center justify-self-center pr-10 sm:bottom-8 sm:top-8 sm:left-8 sm:pr-0"
             >
               <p
-                class="text-shadow max-w-sm text-3xl font-semibold leading-9 text-white sm:text-6xl xl:text-7xl 2xl:text-8xl"
+                class="text-shadow mb-20 max-w-3xl text-2xl font-semibold leading-9 text-slate-800 sm:text-6xl xl:text-7xl 2xl:text-8xl"
               >
-                Lunefuld - Stemningsfulde plakater
+                Skab rammer og stemning i dit hjem
               </p>
             </div>
           </div>
         </div>
+
+        <div
+          id="nyhedsbrev"
+          class="nyhedsbrev scale-in-center border-slate-800"
+        >
+          <h3 class="pt-10 text-xl">Nyhedsbrev</h3>
+          <p>Sign op til vores nyhedsbrev og få 20% på dit første køb!</p>
+          <button id="tilmeld" class="mt-6 rounded border-solid p-2">
+            Tilmeld dig nu
+          </button>
+        </div>
+
         <!-- Hero slut -->
+        <!-- cookie boks -->
+        <div id="cookieboks" class="cookieboks p-1">
+          <h3>Cookiepolitik</h3>
+          <p>
+            Vi bruger cookies til statistik og til målrettet markedsføring fra
+            os selv og vores annoncører. Accepter cookies/Afvis cookies. Læs
+            mere om vores brug af cookies, herunder hvordan du fravælger brugen
+            af cookies.
+          </p>
+          <button id="accepter" class="ml-10 mr-5 mt-2">Accepter</button
+          ><button id="afvis">Afvis</button>
+        </div>
 
         <!-- Featured categories-->
         <div class="mt-10 grid items-center gap-x-8 gap-y-8 lg:grid-cols-2">
@@ -552,6 +587,15 @@
             <p class="mt-4 text-sm leading-none text-white">
               Copyright © 2022 Lunefuld.dk
             </p>
+            <p class="mt-4 text-sm leading-none text-white">
+              E-mail: lunefuld@mail.dk
+            </p>
+            <p class="mt-4 text-sm leading-none text-white">
+              Tlf: +45 00000000
+            </p>
+            <p class="mt-4 text-sm leading-none text-white">
+              Adresse: Guldbergsgade
+            </p>
             <div class="mt-12 flex items-center gap-x-4">
               <button
                 aria-label="instagram"
@@ -626,7 +670,7 @@
               >FAQ</a
             >
             <a
-              href="javascript:void(0)"
+              href="#"
               class="mt-6 cursor-pointer text-base leading-4 text-white hover:text-gray-500 focus:underline focus:outline-none"
               >Handelsbetingelser</a
             >
@@ -661,6 +705,13 @@
                   />
                 </svg>
               </button>
+            </div>
+            <div class="pt-4">
+              <a
+                class="cursor-pointer text-base leading-4 text-white underline underline-offset-1 hover:text-gray-500 focus:outline-none"
+                href="https://web.archive.org/web/20210304234611/https://datacvr.virk.dk/data/"
+                >CVR</a
+              >
             </div>
           </div>
         </div>
